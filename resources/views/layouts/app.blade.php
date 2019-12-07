@@ -8,7 +8,9 @@
     </head>
          <body>
              @include('inc.navbar')
-             <div class= "container"> 
+        <div class= "container"> 
+                 {{--validation is carried out in the post controller but we still need to render the warnings here so the user can see them!--}}
+         @include('inc.messages')
          @yield('content')
         </div>
          </body>

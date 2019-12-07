@@ -10,7 +10,9 @@
 <small>Written on {{$post->created_at}}</small>
     </div>
     @endforeach
+    {{$posts->links()}}
 @else 
+{{$posts->links()}}
 <p> No Posts found!</p>
-@endif
+@endif 
 @endsection
